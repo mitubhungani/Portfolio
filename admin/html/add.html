@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/add.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div id="header"></div>
+        <div class="upper">
+            <div id="content">
+                <div class="head">
+                    <h1 class="head-h1">Add New Post</h1>
+                </div>
+                <form id="for">
+                    <input placeholder="Enter Title" type="text" name="text" id="title" class="in" required>
+                    <input placeholder="Enter Description" type="text" name="text" id="desc" class="in" required>
+                    <input class="file" id="file" type="file"  required/>
+                    <select class="category" id="cat">
+                        <option selected hidden value="">Select Category</option>
+                    </select>
+                    <input placeholder="Enter URL" type="url" name="text" id="url" class="in" required>
+                    <input id="btnsub" type="submit">
+                </form>
+            </div>
+            <div id="show-ui">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/add.js" type="module"></script>
+
+</html>
