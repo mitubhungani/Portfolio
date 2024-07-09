@@ -10,6 +10,7 @@ const mainnav = () => {
                     <li><a href="#proj">Projects</a></li>
                     <li><a href="#technology">Technology</a></li>
                     <li><a href="#about">About me</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>`;

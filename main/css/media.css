@@ -184,7 +184,7 @@
 
   .aboutme {
     font-size: 18px;
-    width: 80%;
+    width: 60%;
     color: white;
     margin: 20px auto;
     padding: 10px 0px;
@@ -194,9 +194,9 @@
   .socialicon {
     width: 10%;
     right: 20px;
-    height: 25%;
+    height: 20%;
     position: absolute;
-    top: 10%;
+    top: 7%;
     left: 0;
   }
 
@@ -258,28 +258,28 @@
   }
 
   #ci1 {
-    top: 10%;
+    top: 0%;
     left: 17%;
   }
 
   #ci2 {
-    top: 39%;
+    top: 25%;
     left: 17%;
   }
 
   #ci3 {
-    top: 66%;
+    top: 50%;
     left: 17%;
   }
 
   #ci4 {
-    top: 87%;
+    top: 75%;
     left: 17%;
   }
 
   .about-info-div::after {
     content: "";
-    top: 12%;
+    top: 1%;
     left: 19%;
     position: absolute;
     display: block;
