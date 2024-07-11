@@ -14,12 +14,12 @@ const addcat = (e) => {
   console.log(hi);
   console.log(id);
   if (id == -1) {
-    postdata("http://localhost:3000/category", hi);
+    postdata("https://json-render-portfolio.onrender.com/category", hi);
   } else {
-    updatedata(`http://localhost:3000/category/${id}`, hi);
+    updatedata(`https://json-render-portfolio.onrender.com/category/${id}`, hi);
   }
 };
-getdata("http://localhost:3000/category");
+getdata("https://json-render-portfolio.onrender.com/category");
 
 let id = -1;
 
@@ -56,7 +56,7 @@ const catui = (data) => {
     del.setAttribute("id", "del");
 
     del.addEventListener("click", () => {
-      deletedata(`http://localhost:3000/category/${cat.id}`);
+      deletedata(`https://json-render-portfolio.onrender.com/category/${cat.id}`);
     });
 
     let add_grp = document.createElement("div");
@@ -70,7 +70,7 @@ const catui = (data) => {
 };
 
 const get = async () => {
-  let res = await fetch("http://localhost:3000/category");
+  let res = await fetch("https://json-render-portfolio.onrender.com/category");
   let data = await res.json();
   catui(data);
   document.getElementById("for").addEventListener("submit", addcat);

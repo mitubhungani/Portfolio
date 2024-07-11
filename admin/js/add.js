@@ -47,13 +47,13 @@ const proinfo = (e) => {
   console.log(newpro);
   console.log(id);
   if (id == -1) {
-    postdata("http://localhost:3000/product", newpro);
+    postdata("https://json-render-portfolio.onrender.com//product", newpro);
   } else {
-    updatedata(`http://localhost:3000/product/${id}`, newpro);
+    updatedata(`https://json-render-portfolio.onrender.com//product/${id}`, newpro);
   }
 };
 
-getdata("http://localhost:3000/product");
+getdata("https://json-render-portfolio.onrender.com/product");
 
 const catui = (data) => {
   const categorySelect = document.getElementById("cat");
@@ -67,7 +67,7 @@ const catui = (data) => {
 };
 
 const loadCategories = async () => {
-  let res = await getdata("http://localhost:3000/category");
+  let res = await getdata("https://json-render-portfolio.onrender.com/category");
   let data = await res;
   console.log(data);
   catui(data);
@@ -121,7 +121,7 @@ const ui = (data) => {
     deleteBtn.setAttribute("id", "deleteBtn");
 
     deleteBtn.addEventListener("click", () => {
-      deletedata(`http://localhost:3000/product/${pro.id}`);
+      deletedata(`https://json-render-portfolio.onrender.com/product/${pro.id}`);
     });
 
     let updateBtn = document.createElement("span");
@@ -137,7 +137,7 @@ const ui = (data) => {
 };
 
 const get = async () => {
-  let res = await fetch("http://localhost:3000/product");
+  let res = await fetch("https://json-render-portfolio.onrender.com/product");
   let data = await res.json();
   ui(data);
   document.getElementById("for").addEventListener("submit", proinfo);
@@ -166,15 +166,15 @@ get();
 
 //   console.log(newpro);
 //   if(id==-1) {
-//     postdata("http://localhost:3000/product", newpro);
+//     postdata("https://json-render-portfolio.onrender.com/product", newpro);
 
 //   }
 //   else{
-//     updatedata(`http://localhost:3000/product/${id}`, newpro);
+//     updatedata(`https://json-render-portfolio.onrender.com/product/${id}`, newpro);
 //   }
 // };
 
-// getdata("http://localhost:3000/product")
+// getdata("https://json-render-portfolio.onrender.com/product")
 
 // const catui = (data) => {
 //   const categorySelect = document.getElementById("cat");
@@ -188,7 +188,7 @@ get();
 // };
 
 // const loadCategories = async () => {
-//   let res = await getdata("http://localhost:3000/category");
+//   let res = await getdata("https://json-render-portfolio.onrender.com/category");
 //   let data = await res;
 //   console.log(data);
 //   catui(data);
@@ -242,7 +242,7 @@ get();
 //     deleteBtn.setAttribute("id", "deleteBtn");
 
 //     deleteBtn.addEventListener("click", () => {
-//       deletedata(`http://localhost:3000/product/${pro.id}`);
+//       deletedata(`https://json-render-portfolio.onrender.com/product/${pro.id}`);
 //     });
 
 //     let updateBtn = document.createElement("span");
@@ -258,7 +258,7 @@ get();
 // };
 
 // const get = async () => {
-//     let res = await fetch("http://localhost:3000/category");
+//     let res = await fetch("https://json-render-portfolio.onrender.com/category");
 //     let data = await res.json();
 //     ui(data);
 //     document.getElementById("for").addEventListener("submit", proinfo);

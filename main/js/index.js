@@ -50,7 +50,7 @@ const proui = (data) => {
 };
 
 const get = async () => {
-  let res = await fetch("http://localhost:3000/product");
+  let res = await fetch("https://json-render-portfolio.onrender.com/product");
   let data = await res.json();
   proui(data);
 };
