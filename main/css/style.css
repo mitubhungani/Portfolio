@@ -165,6 +165,7 @@ html{
 #image {
   width: 90%;
   margin: auto;
+  border-radius: 10px;
 }
 
 #textbox {
